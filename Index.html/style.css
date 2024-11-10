@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header{
+    padding:10px;
+    background-color: black;
+    }
+    .logo { 
+        padding: 50px;
+        margin-right: 750px;
+        margin-left: 750px;
+        background-image: url(Logo.png);
+        background-size:105px ;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: center;
+        position: center;
+    }
+
+    .titre {
+      font-size: 80px;
+      text-align: center;
+      color: white;
+      font-family: "Eagle Lake", serif;
+      font-weight: 350;
+      font-style: normal;
+      }
+      
+
+
+ /* Le menu de navigation */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;       
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+  }
+  
+  /* la couleur des textes */
+.sidebar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+    font-family: "Eagle Lake", serif;
+    font-weight: 350;
+    font-style: normal;
+  }
+  
+  /* Montre la page active */
+.sidebar a.active {
+    border-width: 3px;
+    border-radius: 30px;
+    border-style: solid;
+  }
+
+  
+  /* Fait une autre couleur quand y'a un hover */
+.sidebar a:hover:not(.active) {
+    background-color: #b5b5b5;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }
+  
+  /* fait la scale de la barre de nav */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+.mid {
+  margin: 0;
+  padding: 0;
+  width: 100%;    
+  background-image: url(smaug.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.bas {
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+}
+
+.reseau {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Eagle Lake", serif;
+  font-weight: 10;
+  font-style: normal;
+  margin: 150px;
+}
+
+
+
+.carte {
+  float: left;
+  width: 14%;
+  margin: 12px;
+  display: block;
+  
+
+}
+
+.carte:hover{
+  float: left;
+  width: 30%;
+  display: block;
+  justify-content: center;
+  position: relative;
+}
+
+
+.expli {
+  color: white;
+  font-size: 25px;
+  margin-left: 200px;
+}
+
+
+
+
+
+  
+  /* responciv pour un ecran de moins de 700px de large */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /*responciv pour un ecran de moins de 400px de large ducoup il met la barre de nav sur le dessus plutot que sur le coté */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  } 
+
+    /* responciv pour un ecran de moins de 1000px de large ducoup il met le header plus centré avec logo */
+    @media screen and (max-width: 1000px) {
+      .header {
+        width: 100%;
+        height: auto;
+        position: center;
+      }
+      .header a {float: left;}
+      div.logo {margin-inline: 0;}
+    }
+    
+    /*responciv pour un ecran de moins de 400px de large ducoup il met le header plus centré avec logo */
+    @media screen and (max-width: 400px) {
+      .header a {
+        text-align: center;
+        float: none;
+        position: center
+      }
+      .header a {float: left;}
+      div.logo {margin-inline: 0;}
+    } 
+
+    @media screen and (max-width: 400px) {
+      .carte {
+        width: 100%;
+      }
+      .carte:hover{
+        float: left;
+        width: 300%;
+        display: block;
+        justify-content: center;
+        position: relative;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      .carte {
+        width: 100%;
+      }
+      .carte:hover{
+        float: left;
+        width: 120%;
+        display: block;
+        justify-content: center;
+        position: relative;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .header a {
+        text-align: center;
+        float: none;
+        font-size: 20px;
+      }
+      .header a {float: left;}
+      div.titre {margin-inline: 0;}
+    }
+  
+
+      @media screen and (max-width: 1000px) {
+        .header {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .header a {float: left;}
+        div.titre {margin-inline: 0;}
+      }
